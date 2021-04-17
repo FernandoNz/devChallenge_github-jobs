@@ -1,0 +1,30 @@
+{
+	"name": "github-jobs",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "jest",
+		"build": "webpack --mode production",
+		"start": "webpack serve --mode development"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"@babel/core": "^7.13.15",
+		"@babel/preset-env": "^7.13.15",
+		"babel-loader": "^8.2.2",
+		"clean-webpack-plugin": "^4.0.0-alpha.0",
+		"css-loader": "^5.2.2",
+		"html-webpack-plugin": "^5.3.1",
+		"jest": "^26.6.3",
+		"mini-css-extract-plugin": "^1.4.1",
+		"node-sass": "^5.0.0",
+		"sass-loader": "^11.0.1",
+		"style-loader": "^2.0.0",
+		"webpack": "^5.33.2",
+		"webpack-cli": "^4.6.0",
+		"webpack-dev-server": "^3.11.2"
+	}
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+
+		<!-- icons -->
+		<link
+			href="https://fonts.googleapis.com/icon?family=Material+Icons"
+			rel="stylesheet"
+		/>
+		<!-- fonts -->
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Roboto:wght@400;500;700&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<header>
+			<h1>Github Jobs</h1>
+			<div class="search-container">
+				<form class="search">
+					<span class="material-icons"> work_outline </span>
+					<input
+						type="search"
+						name="search"
+						class="search__input"
+						id="search_input"
+						placeholder="Title, companies, experti..."
+					/>
+					<button type="submit">Search</button>
+				</form>
+			</div>
+		</header>
+		<aside>
+			<input type="checkbox" name="" id="fulltime-checkbox" />
+			<label for="fulltime-checkbox">Fulltime</label>
+			<p>Location</p>
+			<div class="search">
+				<span class="material-icons"> public </span>
+				<input
+					type="text"
+					name=""
+					id="location_input"
+					placeholder="City, state, zip, code or country"
+				/>
+			</div>
+			<div class="inputs-radio">
+				<input type="radio" name="location" id="london" />
+				<label for="london">London</label>
+				<input type="radio" name="location" id="amsterdam" />
+				<label for="amsterdam">Amsterdam</label>
+				<input type="radio" name="location" id="new_york" />
+				<label for="new_york">New York</label>
+				<input type="radio" name="location" id="berlin" />
+				<label for="berlin">Berlín</label>
+			</div>
+		</aside>
+		<section class="jobs">
+			<div class="job">
+				<img
+					src="https://media-exp1.licdn.com/dms/image/C560BAQE2G_YB06GP2A/company-logo_200_200/0/1597963056727?e=1626912000&v=beta&t=XizkQSbSkZf8crfboEoM_l7lIQtPIXAcdAh8GNspdos"
+					alt="a"
+					class="job__img"
+				/>
+			</div>
+			<div class="job__info">
+				<h3 class="job__info-company">Kavak</h3>
+				<h2 class="job__info-title">Frontend Software</h2>
+				<span class="fulltime">Fulltime</span>
+			</div>
+			<div class="job__meta">
+				<div class="location">
+					<span class="material-icons"> public </span>
+					<p>New York</p>
+				</div>
+				<div class="published">
+					<span class="material-icons"> schedule </span>
+					<p>5 days ago</p>
+				</div>
+			</div>
+			<!-- job 2 -->
+			<div class="job">
+				<img
+					src="https://media-exp1.licdn.com/dms/image/C560BAQE2G_YB06GP2A/company-logo_200_200/0/1597963056727?e=1626912000&v=beta&t=XizkQSbSkZf8crfboEoM_l7lIQtPIXAcdAh8GNspdos"
+					alt="a"
+					class="job__img"
+				/>
+			</div>
+			<div class="job__info">
+				<h3 class="job__info-company">Kavak</h3>
+				<h2 class="job__info-title">Frontend Software</h2>
+				<span class="fulltime">Fulltime</span>
+			</div>
+			<div class="job__meta">
+				<div class="location">
+					<span class="material-icons"> public </span>
+					<p>New York</p>
+				</div>
+				<div class="published">
+					<span class="material-icons"> schedule </span>
+					<p>5 days ago</p>
+				</div>
+			</div>
+		</section>
+	</body>
+</html>
