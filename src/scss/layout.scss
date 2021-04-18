@@ -1,0 +1,62 @@
+body {
+	background-color: #efefef;
+	padding: 0 10px 0px;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+p,
+h2,
+h3 {
+	margin: 0px;
+}
+
+button {
+	outline: none;
+	border: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+.github-jobs {
+	font-family: $font-secondary;
+	font-weight: 300;
+	font-size: 24px;
+}
+
+.search-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 123px;
+	background-image: url("https://res.cloudinary.com/nn7/image/upload/v1618631107/github-jobs/backgroundImg-min_pzakri.png");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	border-radius: $border;
+}
+
+main {
+	@media screen and (min-width: 768px) {
+		display: flex;
+		justify-content: space-around;
+	}
+}
+
+.aside {
+	width: 100%;
+	height: 280px;
+	margin-top: 40px;
+
+	@media screen and (min-width: 768px) {
+		width: 30%;
+	}
+}
+
+.jobs {
+	@media screen and (min-width: 768px) {
+		width: 65%;
+		height: 100vh;
+		overflow-y: scroll;
+	}
+}

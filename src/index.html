@@ -19,10 +19,10 @@
 	</head>
 	<body>
 		<header>
-			<h1>Github Jobs</h1>
+			<h1 class="github-jobs"><strong>Github</strong> Jobs</h1>
 			<div class="search-container">
 				<form class="search">
-					<span class="material-icons"> work_outline </span>
+					<span class="material-icons search__icon"> work_outline </span>
 					<input
 						type="search"
 						name="search"
@@ -30,80 +30,76 @@
 						id="search_input"
 						placeholder="Title, companies, experti..."
 					/>
-					<button type="submit">Search</button>
+					<button type="submit" class="search__btn">Search</button>
 				</form>
 			</div>
 		</header>
-		<aside>
-			<input type="checkbox" name="" id="fulltime-checkbox" />
-			<label for="fulltime-checkbox">Fulltime</label>
-			<p>Location</p>
-			<div class="search">
-				<span class="material-icons"> public </span>
-				<input
-					type="text"
-					name=""
-					id="location_input"
-					placeholder="City, state, zip, code or country"
-				/>
-			</div>
-			<div class="inputs-radio">
-				<input type="radio" name="location" id="london" />
-				<label for="london">London</label>
-				<input type="radio" name="location" id="amsterdam" />
-				<label for="amsterdam">Amsterdam</label>
-				<input type="radio" name="location" id="new_york" />
-				<label for="new_york">New York</label>
-				<input type="radio" name="location" id="berlin" />
-				<label for="berlin">Berlín</label>
-			</div>
-		</aside>
-		<section class="jobs">
-			<div class="job">
-				<img
-					src="https://media-exp1.licdn.com/dms/image/C560BAQE2G_YB06GP2A/company-logo_200_200/0/1597963056727?e=1626912000&v=beta&t=XizkQSbSkZf8crfboEoM_l7lIQtPIXAcdAh8GNspdos"
-					alt="a"
-					class="job__img"
-				/>
-			</div>
-			<div class="job__info">
-				<h3 class="job__info-company">Kavak</h3>
-				<h2 class="job__info-title">Frontend Software</h2>
-				<span class="fulltime">Fulltime</span>
-			</div>
-			<div class="job__meta">
-				<div class="location">
-					<span class="material-icons"> public </span>
-					<p>New York</p>
+		<!-- aside -->
+		<main>
+			<aside class="aside">
+				<div class="fulltime-checkbox">
+					<input type="checkbox" name="" id="fulltime-checkbox" />
+					<label for="fulltime-checkbox">Full time</label>
 				</div>
-				<div class="published">
-					<span class="material-icons"> schedule </span>
-					<p>5 days ago</p>
+				<p class="aside__loc">Location</p>
+				<div class="aside__search">
+					<span class="material-icons search__icon"> public </span>
+					<input
+						type="text"
+						name=""
+						id="location_input"
+						placeholder="City, state, zip, code or country"
+						class="search__input search__input--aside"
+					/>
 				</div>
-			</div>
-			<!-- job 2 -->
-			<div class="job">
-				<img
-					src="https://media-exp1.licdn.com/dms/image/C560BAQE2G_YB06GP2A/company-logo_200_200/0/1597963056727?e=1626912000&v=beta&t=XizkQSbSkZf8crfboEoM_l7lIQtPIXAcdAh8GNspdos"
-					alt="a"
-					class="job__img"
-				/>
-			</div>
-			<div class="job__info">
-				<h3 class="job__info-company">Kavak</h3>
-				<h2 class="job__info-title">Frontend Software</h2>
-				<span class="fulltime">Fulltime</span>
-			</div>
-			<div class="job__meta">
-				<div class="location">
-					<span class="material-icons"> public </span>
-					<p>New York</p>
+				<div class="inputs-radio">
+					<div>
+						<input type="radio" name="location" id="london" />
+						<label for="london">London</label>
+					</div>
+					<div>
+						<input type="radio" name="location" id="amsterdam" />
+						<label for="amsterdam">Amsterdam</label>
+					</div>
+					<div>
+						<input type="radio" name="location" id="new_york" />
+						<label for="new_york">New York</label>
+					</div>
+					<div>
+						<input type="radio" name="location" id="berlin" />
+						<label for="berlin">Berlín</label>
+					</div>
 				</div>
-				<div class="published">
-					<span class="material-icons"> schedule </span>
-					<p>5 days ago</p>
+			</aside>
+			<!-- jobs -->
+			<section class="jobs">
+				<div class="job">
+					<div class="job__img-container">
+						<img
+							src="https://media-exp1.licdn.com/dms/image/C560BAQE2G_YB06GP2A/company-logo_200_200/0/1597963056727?e=1626912000&v=beta&t=XizkQSbSkZf8crfboEoM_l7lIQtPIXAcdAh8GNspdos"
+							class="job__img"
+							alt="a"
+						/>
+					</div>
+					<div class="job__info">
+						<div class="job__description">
+							<h3 class="job__info-company">Kavak</h3>
+							<h2 class="job__info-title">Frontend Software</h2>
+							<span class="fulltime">Full time</span>
+						</div>
+						<div class="job__meta">
+							<div class="job__meta-location">
+								<span class="material-icons icon-meta"> public </span>
+								<p>New York</p>
+							</div>
+							<div class="job__meta-published">
+								<span class="material-icons icon-meta"> schedule </span>
+								<p>5 days ago</p>
+							</div>
+						</div>
+					</div>
 				</div>
-			</div>
-		</section>
+			</section>
+		</main>
 	</body>
 </html>

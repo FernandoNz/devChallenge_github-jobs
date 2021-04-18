@@ -1,0 +1,83 @@
+@import "../base.scss";
+.job {
+	display: flex;
+	width: 100%;
+	max-width: 750px;
+	height: 130px;
+	background-color: white;
+	margin-bottom: 20px;
+	border-radius: $border;
+
+	@media screen and (min-width: 768px) {
+		margin-top: 40px;
+	}
+}
+
+.job__img-container {
+	width: 30%;
+	height: 100%;
+	border-radius: $border;
+}
+
+.job__img {
+	height: 78%;
+	width: 100%;
+	object-fit: cover;
+	display: block;
+	border-radius: $border;
+}
+
+.job__info {
+	width: 70%;
+	height: 100%;
+	padding-left: 15px;
+	font-family: $font-primary;
+	color: $blue;
+}
+
+.job__description {
+	width: 100%;
+	height: 65%;
+}
+
+.job__info-company,
+.job__info-title {
+	margin-bottom: 10px;
+}
+
+.job__info-company {
+	font-weight: 700;
+	font-size: 13px;
+	margin-top: 10px;
+}
+
+.job__info-title {
+	font-weight: 400;
+	font-size: 16px;
+}
+
+.job__meta {
+	display: flex;
+	height: 35%;
+	width: 100%;
+}
+
+.job__meta-location,
+.job__meta-published {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 50%;
+	height: 100%;
+	color: $gray;
+	font-family: $font-primary;
+	font-weight: 500;
+	font-size: 13px;
+}
+
+.icon-meta {
+	font-size: 17px;
+}
+.job__meta p {
+	margin: 0px 6px;
+}

@@ -1,1 +1,12 @@
 @import "./scss/base.scss";
+
+@import "./scss/layout.scss";
+
+// components
+@import "./scss/components/search.scss";
+@import "./scss/components/fulltime-checkbox.scss";
+@import "./scss/components/inputs-radio.scss";
+@import "./scss/components/aside__search.scss";
+@import "./scss/components/job-card.scss";
+@import "./scss/components/fultime.scss";
+@import "./scss//components/aside__loc.scss";
